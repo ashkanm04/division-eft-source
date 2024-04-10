@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9b6356d3-0dc0-40e7-8495-a0112df6845b}</ProjectGuid>
+    <RootNamespace>EftCheat</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEVELOPMENT;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEVELOPMENT;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\CR3\CR3.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\Device\Device.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\Driver\Driver.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\KMU.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\KProcess\KProcess.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\Library\Library.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\PDB\PDB.cpp" />
+    <ClCompile Include="Source\Dependencies\Driver\Process\Process.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Framework\Framework.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Input\Input.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Source\Dependencies\Window\Vendor\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\p10Config\Config.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Dependencies\Authentication\Aether Auth.hpp" />
+    <ClInclude Include="Source\Dependencies\Config\Config.hpp" />
+    <ClInclude Include="Source\Dependencies\Config\Variables.hpp" />
+    <ClInclude Include="Source\Dependencies\Dependencies.h" />
+    <ClInclude Include="Source\Dependencies\Driver\CR3\CR3.h" />
+    <ClInclude Include="Source\Dependencies\Driver\Definitions.h" />
+    <ClInclude Include="Source\Dependencies\Driver\Device\Device.h" />
+    <ClInclude Include="Source\Dependencies\Driver\Driver.hpp" />
+    <ClInclude Include="Source\Dependencies\Driver\Driver\Driver.h" />
+    <ClInclude Include="Source\Dependencies\Driver\KMU.h" />
+    <ClInclude Include="Source\Dependencies\Driver\KProcess\KProcess.h" />
+    <ClInclude Include="Source\Dependencies\Driver\Library\Library.h" />
+    <ClInclude Include="Source\Dependencies\Driver\PDB\PDB.h" />
+    <ClInclude Include="Source\Dependencies\Driver\Process\Process.h" />
+    <ClInclude Include="Source\Dependencies\Encryption\String.hpp" />
+    <ClInclude Include="Source\Dependencies\Exception\Exception.hpp" />
+    <ClInclude Include="Source\Dependencies\Math\Math.hpp" />
+    <ClInclude Include="Source\Dependencies\Math\Vector\Vector.h" />
+    <ClInclude Include="Source\Dependencies\Mutex\List.hpp" />
+    <ClInclude Include="Source\Dependencies\Mutex\Object.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Callback\Draw.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Callback\Menu.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Fonts\Fonts.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Framework\Framework.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Input\Input.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\DirectX\DirectX11.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imconfig.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_animation.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_colorpicker.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_internal.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_keybind.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_list.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imgui_tab.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\ImGui\stb_image.h" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\Renderer\Renderer.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Vendor\stb\stb.hpp" />
+    <ClInclude Include="Source\Dependencies\Window\Window.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Cache.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Entity\Entity.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Entity\Object.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Instance\Instance.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Instance\Object.hpp" />
+    <ClInclude Include="Source\EFT\Cache\Target\Target.hpp" />
+    <ClInclude Include="Source\EFT\Cache\World\Object.hpp" />
+    <ClInclude Include="Source\EFT\Cache\World\World.hpp" />
+    <ClInclude Include="Source\EFT\Combat\Aimbot\Aimbot.hpp" />
+    <ClInclude Include="Source\EFT\Combat\Combat.hpp" />
+    <ClInclude Include="Source\EFT\EFT.hpp" />
+    <ClInclude Include="Source\EFT\Misc\DebugCamera\DebugCamera.hpp" />
+    <ClInclude Include="Source\EFT\Misc\Misc.hpp" />
+    <ClInclude Include="Source\EFT\Misc\Other\Other.hpp" />
+    <ClInclude Include="Source\Include.h" />
+    <ClInclude Include="Source\p10Config\Archivex.h" />
+    <ClInclude Include="Source\p10Config\Config.h" />
+    <ClInclude Include="Source\SDK\Classes\BreathEffector.hpp" />
+    <ClInclude Include="Source\SDK\Classes\Classes.hpp" />
+    <ClInclude Include="Source\SDK\Classes\DizSkinningSkeleton.hpp" />
+    <ClInclude Include="Source\SDK\Classes\FirearmController.hpp" />
+    <ClInclude Include="Source\SDK\Classes\GameWorld.hpp" />
+    <ClInclude Include="Source\SDK\Classes\HandsController.hpp" />
+    <ClInclude Include="Source\SDK\Classes\HealthController.hpp" />
+    <ClInclude Include="Source\SDK\Classes\MovementContext.hpp" />
+    <ClInclude Include="Source\SDK\Classes\ObservedPlayerController.hpp" />
+    <ClInclude Include="Source\SDK\Classes\ObservedPlayerView.hpp" />
+    <ClInclude Include="Source\SDK\Classes\Physical.hpp" />
+    <ClInclude Include="Source\SDK\Classes\Player.hpp" />
+    <ClInclude Include="Source\SDK\Classes\PlayerBody.hpp" />
+    <ClInclude Include="Source\SDK\Classes\ProceduralWeaponAnimation.hpp" />
+    <ClInclude Include="Source\SDK\Classes\ShotEffector.hpp" />
+    <ClInclude Include="Source\SDK\Classes\StaminaParameters.hpp" />
+    <ClInclude Include="Source\SDK\Classes\WalkEffector.hpp" />
+    <ClInclude Include="Source\SDK\Offset\Offset.hpp" />
+    <ClInclude Include="Source\SDK\Screen\Player.hpp" />
+    <ClInclude Include="Source\SDK\Screen\Screen.hpp" />
+    <ClInclude Include="Source\SDK\SDK.h" />
+    <ClInclude Include="Source\SDK\Storage\Storage.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Array.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\BifacialTransform.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Camera.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Dictionary.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\GameObject.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\List.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Matrix.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Object.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\Transform.hpp" />
+    <ClInclude Include="Source\SDK\UnityEngine\UnityEngine.h" />
+    <ClInclude Include="Source\SDK\UnityEngine\VisualState.hpp" />
+    <ClInclude Include="Source\SDK\World\Player.hpp" />
+    <ClInclude Include="Source\SDK\World\World.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Dependencies\Authentication\Aether Auth.lib" />
+    <Library Include="Source\Dependencies\Authentication\VirtualizerSDK64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
