@@ -12,4 +12,4 @@
 **Details:**
 All of these individuals were involved in leaking customer information. Below are the leaked EFT cheat and bypass, along with evidence of them logging and exploiting users.
 
-add me if you need anything (: discord:the0x9 partner:adrenalinecc
+add me if you need anything (: discord:the0x9
